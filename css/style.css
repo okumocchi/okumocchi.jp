@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.4;
+}
+
+#title {
+  width: 95%;
+  text-align: center;
+  border-bottom:1px solid #888;
+  margin: 0 auto;
+}
+
+
+
+.app-box {
+  width: 800px;
+  height: auto;
+  border: 1px solid #888;
+  margin: 10px;
+  padding: 10px;
+  min-height: 500px;
+  
+}
+
+.app-box .main-img {
+  margin:0 10px 10px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.app-box .description {
+  display: inline-block;
+  margin: 0 10px;
+  width: 440px;
+  vertical-align: top;
+}
+
+.app-box h1 {
+  color: #558;
+  font-size: 30px;
+  margin: 8px 0;
+  
+}
+
+.app-box h1 .app-store-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  text-decoration:none;
+  background: #eee;
+  padding: 2px;
+  border-radius: 5px;
+  
+}
+.app-box h1 a:hover {
+  color: #c77;
+}
+
+.app-box h2 {
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+}
+
+.app-box h3 {
+  font-size: 14px;
+}
+
+.app-box p {
+  color: #444;
+  font-size: 14px;
+}
+
+.app-box ul {
+  margin: 10px 10px;
+}
+
+.app-box ul li{
+  font-size: 14px;
+  font-weight: bold;
+  color: #644;
+  list-style-type: square;
+  line-height:1.7;
+}

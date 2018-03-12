@@ -1,0 +1,13 @@
+body {width:780px; height:1000px;background:#eee;}
+#navi {width:180px; height:100%; background:white;float:left;}
+#main {width:600px; height:100%; background:#fa3;float:left;}
+
+
+#navi p {margin:5px;}
+.chapter {width:580px; background:#fea;border:solid 3px #511;margin:5px;padding:0px}
+
+.chapter h1 {font-size:1.3em; color:#500}
+.chapter .q {background:#FFF;margin:5px;padding:2px;height:20px;overflow-y:hidden;cursor:pointer}
+
+.red {color:red}
+.blue {color:blue}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="lolipop">
+    <serverData>
+      <paths name="lolipop">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/archive" />
+            <excludedPath path="/bbs" />
+            <excludedPath path="/blog" />
+            <excludedPath path="/bn" />
+            <excludedPath path="/cake" />
+            <excludedPath path="/dc" />
+            <excludedPath path="/dengonban" />
+            <excludedPath path="/digicell" />
+            <excludedPath path="/eit" />
+            <excludedPath path="/error" />
+            <excludedPath path="/flashes" />
+            <excludedPath path="/flashlite" />
+            <excludedPath path="/goody" />
+            <excludedPath path="/iPhone" />
+            <excludedPath path="/jr" />
+            <excludedPath path="/libs" />
+            <excludedPath path="/mv" />
+            <excludedPath path="/nametap" />
+            <excludedPath path="/pt" />
+            <excludedPath path="/scores" />
+            <excludedPath path="/social_app" />
+            <excludedPath path="/st" />
+            <excludedPath path="/vv" />
+            <excludedPath path="/YoutubeAPI" />
+            <excludedPath path="/ZendFramework1.10" />
+            <excludedPath path="/zf" />
+            <excludedPath path="/php/app" />
+            <excludedPath path="/php/app01" />
+            <excludedPath path="/php/app02" />
+            <excludedPath path="/php/euc" />
+            <excludedPath path="/php/templates" />
+            <excludedPath path="/php/templates_c" />
+            <excludedPath path="/php/zend" />
+            <excludedPath local="true" path="$PROJECT_DIR$/archive" />
+            <excludedPath local="true" path="$PROJECT_DIR$/bbs" />
+            <excludedPath local="true" path="$PROJECT_DIR$/blog" />
+            <excludedPath local="true" path="$PROJECT_DIR$/bn" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cake" />
+            <excludedPath local="true" path="$PROJECT_DIR$/dc" />
+            <excludedPath local="true" path="$PROJECT_DIR$/dengonban" />
+            <excludedPath local="true" path="$PROJECT_DIR$/digicell" />
+            <excludedPath local="true" path="$PROJECT_DIR$/eit" />
+            <excludedPath local="true" path="$PROJECT_DIR$/error" />
+            <excludedPath local="true" path="$PROJECT_DIR$/flashes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/flashlite" />
+            <excludedPath local="true" path="$PROJECT_DIR$/goody" />
+            <excludedPath local="true" path="$PROJECT_DIR$/iPhone" />
+            <excludedPath local="true" path="$PROJECT_DIR$/jr" />
+            <excludedPath local="true" path="$PROJECT_DIR$/libs" />
+            <excludedPath local="true" path="$PROJECT_DIR$/mv" />
+            <excludedPath local="true" path="$PROJECT_DIR$/nametap" />
+            <excludedPath local="true" path="$PROJECT_DIR$/pt" />
+            <excludedPath local="true" path="$PROJECT_DIR$/scores" />
+            <excludedPath local="true" path="$PROJECT_DIR$/social_app" />
+            <excludedPath local="true" path="$PROJECT_DIR$/st" />
+            <excludedPath local="true" path="$PROJECT_DIR$/vv" />
+            <excludedPath local="true" path="$PROJECT_DIR$/YoutubeAPI" />
+            <excludedPath local="true" path="$PROJECT_DIR$/ZendFramework1.10" />
+            <excludedPath local="true" path="$PROJECT_DIR$/zf" />
+            <excludedPath local="true" path="$PROJECT_DIR$/php/app" />
+            <excludedPath local="true" path="$PROJECT_DIR$/php/app01" />
+            <excludedPath local="true" path="$PROJECT_DIR$/php/app02" />
+            <excludedPath local="true" path="$PROJECT_DIR$/php/euc" />
+            <excludedPath local="true" path="$PROJECT_DIR$/php/templates" />
+            <excludedPath local="true" path="$PROJECT_DIR$/php/templates_c" />
+            <excludedPath local="true" path="$PROJECT_DIR$/php/zend" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

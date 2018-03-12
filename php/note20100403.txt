@@ -1,0 +1,113 @@
+講義メモ
+
+■PHPマスター２日目
+・復習
+
+問）courseテーブルに以下のレコードを追加。
+code | title       | price
+-----+-------------+-------
+301  | Java Basic  | 50000
+302  | Java Master | 70000
+
+・行の抽出順を指定（order by)
+select * from course order by price;  受講料の昇順（安い順）に抽出
+select * from course order by price desc;  受講料の降順に抽出
+上のSQLはpriceをキー列としてソートをかけている
+
+select * from schedule order by course, staff; コースコードを第１キー、スタッフコードを第２キーとして抽出
+
+・集計関数
+抽出列に集計関数を用いると、全行を対象とした集計値を求めることができる。
+
+select max(price) from course; もっとも高い受講料を取得
+
+以下のように、通常の列値と集計値を同時に抽出することはできない。
+
+select title, max(price) from course;  NG
+
+select sum(code), max(price) from course; これは両方に集計関数を使っているのでOK。ただし意味のある値は得られないが
+
+行数を求めるときは、慣例的に以下のように記述。
+select count(*) from schedule;
+
+・グループ化（group by)
+ある列の値をキーとして行をグループ化し集計値を求めることができる。
+
+select code, min(start_date) from schedule group by course; それぞれのコースでもっとも早い開講日を抽出。
+
+※抽出列には、グループ化に使用した値はそのまま記述できる。それ以外の列は集計値である必要がある。
+
+グループ化のキーには以下のように複数列を指定可能。
+select code, staff, min(start_date) from schedule group by course, staff;
+
+・結合
+1)whereによる結合（最近はあまり使用されない）
+select course.title, schedule.start_date from course, schedule where course.code=schedule.course;
+
+2)joinによる結合（こっちを覚えましょう）
+select course.title, schedule.start_date from schedule join course on schedule.course=course.code;
+
+文法は
+from ベースとなるテーブル join 参照先テーブル on 結合条件
+
+以下のように、3つ以上のテーブルを結合するときは、「join ～ on ～」を1組にして続ける
+select course.title, staff.name, schedule.start_date from schedule join course on schedule.course=course.code join staff on schedule.staff=staff.code;
+
+このSQLでは結合条件が一致しない行は抽出されない（内部結合）。
+例えば、scheduleテーブルのcourse列に、courseテーブルにない「109」という値があった場合、
+その行は抽出されない。
+結合条件に関係なく、ベースとなるテーブルのすべての行を抽出したい場合は、
+joinの代わりにleft joinを用いる。（外部結合）
+
+・PHPからデータベース（MySQL）にアクセスする。
+＜３つの方法＞
+1)組み込み関数（MySQL関数）を使用
+○早い、簡単に使える
+×MySQLのみしか対応できない
+
+2)PEARライブラリを使用
+○インストールが簡単。多種のDBに対応
+×遅い
+
+3)PDO拡張モジュールを使用
+○速い。多種のDBに対応
+×インストールが面倒
+
+・MySQL関数を使った流れ
+
+MySQLに接続
+　　↓
+データベースを選択
+　　↓
+SQLの実行  ←更新系処理（insert, update, delete）の場合はここで終了。selectの場合は続く
+　　↓
+抽出データの処理 
+　　↓
+出力
+
+テキストp.24のプログラムを実行して確認
+
+＜演習＞
+・新規データベース「myapp」を作成。
+・myappデータベースに、以下のテーブルを作成
+会員テーブル(member)
+  ID(id) 整数型、主キー、自動採番号(auto_increment)
+  パスワード(password) 文字列型（最大20文字）
+  Eメール(email) 文字列型（最大200文字）
+  性別(gender) 文字列型（1文字）
+  職業(job) 整数型
+  コメント(comment) テキスト型
+  
+※コメント以外はnull不可
+※auto_increment属性をつけると、insert時に値を指定しなかった（省略した）ときに、
+続き番号が自動的に割り当てられる。
+
+・解答例（途中）
+create table member (
+  id int primary key auto_increment,
+  password
+  email
+  gender
+  job
+  comment
+);

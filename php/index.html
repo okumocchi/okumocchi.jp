@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>燃えプロ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<link href="./style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function clickQ(e) {
+	if (e.style.overflow == "visible") {
+		e.style.overflow= "hidden";
+		e.style.height = "20px";
+	} else {
+		e.style.overflow= "visible";
+		e.style.height = "auto";
+	}
+}
+</script>
+</head>
+<body>
+<div id="navi">
+  <img src="./mantikan.jpg">
+<p>コードの添削や質問などあれば、<a href="mailform.html">こちら</a>から送信してください。<br>
+
+</p>
+<hr />
+<p>演習の解答例</p>
+<p><a href="./regist_confirm.zip">4/17(regist_confirm)</a></p>
+
+</div>
+
+
+<div id="main">
+  <div class="chapter">
+    <h1>変数</h1>
+  </div>
+  <div class="chapter">
+    <h1>演算子</h1>
+  </div>
+  <div class="chapter">
+    <h1>配列</h1>
+    <div class="q" onclick="clickQ(this)">
+    1. 月ごとの日数を格納する配列「$days」を作成しなさい。添え字と月数を一致させること。（うるう年は考慮しなくてよい）<br>
+    例えば、echo $days[2]；の処理で「28」が出力されるように。
+    </div>
+  </div>
+  <div class="chapter">
+    <h1>条件分岐</h1>
+    <div class="q" onclick="clickQ(this)">
+    1. 変数「$year」に代入した年（西暦）がうるう年かどうかを判断するプログラム。（4で割り切れ、かつ100で割り切れない年、あるいは400で割り切れる年がうるう年）
+    </div>
+    
+  </div>
+  <div class="chapter">
+    <h1>繰り返し</h1>
+    <div class="q" onclick="clickQ(this)">
+    1. 1+2+3+ ... + 100の計算結果をfor文を使って求めなさい。</div>
+    <div class="q" onclick="clickQ(this)">
+    2. 1+2+3+ ... と足していき、最初に100を超えたときの値を出力しなさい。while文を使うこと。</div>
+    <div class="q" onclick="clickQ(this)">
+    3. 「3 5 6 9 10 ...」 と1～100までの整数のうち3の倍数と5の倍数を小さい順に出力しなさい。</div>
+    <div class="q" onclick="clickQ(this)">
+    4. 「1 2 <span class="red">3</span> 4 5 <span class="red">6</span> 7 8 ...」 と3の倍数のみ赤字で1～30までの整数を小さい順に出力しなさい。</div>
+    <div class="q" onclick="clickQ(this)">
+    5. 5人分のテストの点数（85, 70, 98, 65, 51）を保持した配列がある。全員の平均点を求めなさい。
+    </div>
+    <div class="q" onclick="clickQ(this)">
+    6. 上記の配列で、平均点以上の点数だけを出力しなさい。
+    </div>
+    <div class="q" onclick="clickQ(this)">
+    7. 上記の配列で、平均点以上の人数を出力しなさい。
+    </div>
+  </div>
+  <div class="chapter">
+    <h1>関数</h1>
+    <div class="q" onclick="clickQ(this)">
+    1. 引数として西暦で年を渡すと、その年がうるう年ならばtrueを、そうでなければfalseを返す「checkLeap()」関数を定義しなさい。
+    </div>
+    <div class="q" onclick="clickQ(this)">
+   2. 引数として年（西暦）と 月を渡すと、その月の日数を返す「getDays()」関数を定義しなさい。うるう年を考慮すること（上の問題で定義したcheckLeap()関数を使用）<br>
+    関数の呼び出し例）echo getDays(2000, 2); // 「29」と出力
+    </div>
+    <div class="q" onclick="clickQ(this)">
+   3. 引数として年（西暦）と 月を渡すと、その月の1日の曜日コードを返す「get1stDay()」関数を定義しなさい。（ヒント：mktime()関数で対象日のタイムスタンプを得る→date()関数かgetdate()関数にそのタイムスタンプを渡し曜日コードを取得→曜日コードをreturn）<br>
+   曜日コード<br>
+    <table border="1"><tr><th>日曜</th><th>月曜</th><th>火曜</th><th>水曜</th><th>木曜</th><th>金曜</th><th>土曜</th></tr>
+    <tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr></table>
+    <br>
+    関数の呼び出し例）echo get1stDay(2010, 3); // 「1」と出力
+   </div>
+ 
+   <div class="q" onclick="clickQ(this)">
+   4. 上で定義したgetDays()関数と、get1stDay()関数を利用して、指定した月の1行カレンダーを作成（出力）しなさい。<br>
+   ＜出力例＞<br>
+   <b>2010年3月</b> 1 2 3 4 5 <span class="blue">6</span> <span class="red">7</span> 8 9 10 11 12 <span class="blue">13</span> <span class="red">14</span> 15 16 17 18 19 <span class="blue">20</span> <span class="red">21</span> 22 23 24 25 26 <span class="blue">27</span> <span class="red">28</span> 29 30 31
+    </div>
+</div>
+
+</body>
+</html>

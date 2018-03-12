@@ -1,0 +1,48 @@
+.gs
+{
+	border-style: solid;
+	border-color: #000000;
+	background-color: transparent;
+	border-width: 0px 0px 1px;
+}
+
+#u69-4
+{
+	background-color: transparent;
+	color: #AAAAAA;
+	font-size: 20px;
+	line-height: 35px;
+	font-family: Courier New, Courier, monospace;
+	position: relative;
+}
+
+#u72,#u80
+{
+	border-style: solid;
+	border-width: 0px 0px 1px;
+}
+
+#u72_align_to_page,#u80_align_to_page
+{
+	position: relative;
+}
+
+#u121
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u109-4
+{
+	background-color: transparent;
+	color: #7A7A7A;
+	text-align: center;
+	font-size: 12px;
+	line-height: 21px;
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, ＭＳ Ｐゴシック, MS PGothic, sans-serif;
+	position: relative;
+}
+

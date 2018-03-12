@@ -1,0 +1,172 @@
+* {
+	margin:0 0;
+}
+
+body {
+	background: #e8e8e8;
+}
+
+a {
+	color:red;
+}
+a:hover {
+	color: yellow;
+}
+
+#header {
+	width: 100%;
+	height: 250px;
+	background: #333;
+}
+#main {
+	width: 100%;
+	height: 100%;
+	background: #000 url(./images/bg.png);
+	position: relative;
+}
+
+#loginform {
+	font-size: 80%;
+	color: #aaa;
+	margin: 10px;
+	text-align:right;
+}
+
+
+#loginform input {
+	height: 18px;
+}
+
+#title {
+	position:absolute;
+	font-size: 25px;
+	color: #888;
+	left: 20px;
+	top: 210px
+}
+
+#navi {
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	margin:0 0;
+	position: relative;
+}
+
+
+
+#navi .userlist {
+	position:absolute;
+	top: 10px;
+	left: 400px;
+}
+
+#navi #size {
+	position:absolute;
+	top: 10px;
+	left: 10px;
+}
+
+
+
+
+#global-events {
+	width: 200px;
+	height: 100%;
+}
+
+#global-events #years {
+	font-size: 30px;
+	color: #d8d8d8;
+	margin-left:10px;
+	font-style:italic;
+}
+
+#global-events #years .year {
+	height: 60;
+	margin:0;
+}
+
+#global-events .item {
+	font-size: 12px;
+	position:absolute;
+	left: 50px;
+	color: #777;
+}
+
+
+.personal-events {
+	width: 500px;
+	height: 100%;
+	position:absolute;
+	top: 0px;
+	left: 200px;
+}
+
+
+.profile {
+	widht: 200px;
+	position: absolute;
+	text-align: center;
+	
+}
+
+.profile .handlename {
+	font-size: 16px;
+	font-weight: bold;
+}
+.profile .life-title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #800;
+}
+.profile .life-title a {
+	text-decoration:none;
+	color: #800;
+}
+
+.profile .age {
+	font-size: 12px;
+	color:#009;
+}
+
+
+.personal-events .bar {
+	position:absolute;
+	width: 7px;
+	height: 100px;
+	background: #aaf;
+	margin-left:35px;
+	box-shadow:3px 3px 5px #888;
+}
+.personal-events .item {
+	font-size: 14px;
+	position:absolute;
+	margin-left: 50px;
+}
+
+.caption {
+	font-size: 10px;
+	color: #080;
+}
+
+#comment {
+	position: absolute;
+	top: 100px;
+	left: 250px;
+	width:260px;
+	background: #333;
+	color: #fff;
+	font-size: 13px;
+	padding: 5px;
+	line-height: 130%;
+	opacity: 0.9;
+	display:none;
+}
+
+#footer {
+	width: 100%;
+	height: 200px;
+	background: #eee;
+	border-top:1px solid #dedede;
+}

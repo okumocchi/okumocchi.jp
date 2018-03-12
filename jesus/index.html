@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <title>With Jesus</title>
+    <style type="text/css">
+        html,body {
+            margin:0px;
+            height: 600px;
+        }
+        #jesus_image {
+            width: 320px;
+            height:500px;
+            margin-top: 50px;
+        }
+
+    </style>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<img src="images/doushite.png" id="jesus_image">
+<script>
+    $(function(){
+       $('#jesus_image').on('click', function() {
+          alert('nga');
+       });
+    });
+</script>
+</body>
+</html>
